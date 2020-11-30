@@ -1,0 +1,21 @@
+plugins {
+    id 'org.jetbrains.kotlin.jvm' version '1.4.10'
+    id 'application'
+}
+
+group 'com.seemsnerdy.weatherbot'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+    maven { url "https://jitpack.io" }
+}
+
+mainClassName = 'com.seemsnerdy.weatherbot.Main'
+
+dependencies {
+    implementation "org.jetbrains.kotlin:kotlin-stdlib"
+    implementation 'io.github.kotlin-telegram-bot.kotlin-telegram-bot:telegram:5.0.0'
+    implementation 'io.github.cdimascio:java-dotenv:5.2.2'
+    implementation 'org.seleniumhq.selenium:selenium-server:3.141.59'
+}
